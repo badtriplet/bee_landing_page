@@ -1,0 +1,1100 @@
+@import url(reset.css);
+@import url(popup.css);
+
+header{
+	background: url(../img/bg_image.jpg) no-repeat;
+	background-position: center center;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.show{
+	display: none;
+}
+.header .container-fluid{
+	background: #fff;
+}
+
+.header_features{
+	height: 90px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.header_features_logo{
+	max-width:218px;
+}
+.header_features_feature{
+	width:161px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;	
+}
+.feature_1::before{
+	position: absolute;
+	left: -20px;
+	content: url(../img/colb.png);
+}
+.feature_2::before{
+	position: absolute;
+	left: -11px;
+	content: url(../img/grass.png);
+}
+.feature_3::before{
+	position: absolute;
+	left: -10px;
+	content: url(../img/percents.png);
+}
+.feature_2 .header_features_feature_description{
+		padding-left: 23px;
+	}
+.header_features_feature_description{
+	padding-left:12px;
+	color: #232323;
+	font-family: Ubuntu;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 17.8px;
+	/* Text style for "7, 5% скид" */
+	letter-spacing: 0.35px;
+}
+.button{
+	padding: 13.5px 39px;
+	color: #232323;
+	font-family: Rubik;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 23.7px;
+	text-transform: uppercase;
+	/* Text style for "заказать з" */
+	letter-spacing: 0.41px;
+	background-color: #232323;
+	color: #fff;
+	
+}
+.button-o{
+	color: #232323;
+	background: transparent;
+	border: 1px solid #232323;
+}
+.header_main{
+	padding-top:38px;
+}
+.header_main_offer{
+	max-width: 940px;
+	background: rgba(255,255,255, 0.95);
+	padding-top: 31px;
+	margin-bottom: 41px;
+}
+.header_main_offer_title{
+	padding-bottom: 20px;
+}
+.header_main_offer_title h1{
+	color: #232323;
+	font-family: "Leksa Sans";
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 40px;
+}
+.header_main_offer_subtitle {
+	color: #c68e64;
+	font-family: Ubuntu;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 0.51px;
+	padding-bottom: 11px;
+}
+.header_main_offer_price{
+	color: #232323;
+	font-family: "Leksa Sans";
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 39.48px;
+	padding-bottom: 27px;
+}
+.sell_price{
+	text-decoration: line-through;
+}
+.red{
+	color: #993535;
+
+}
+.header_main_offer_countdown_title{
+	color: #474747;
+	font-family: Ubuntu;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 34.26px;
+	text-transform: uppercase;
+	/* Text style for "До окончан" */
+	letter-spacing: 0.06px;
+	padding-bottom: 9px;
+}
+.header_main_offer_countdown_timer{
+	max-width: 267px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.header_main_offer_countdown_timer_names{
+	max-width: 267px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	color: #474747;
+	font-family: Ubuntu;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 34.28px;
+	/* Text style for "Секунд" */
+	letter-spacing: 0.06px;
+}
+
+.countdown_figure{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 69px;
+	height: 60px;
+	background: url(../img/figure.png) no-repeat;
+	background-position: center center;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+.countdown_time{
+	color: #232323;
+	font-family: "Leksa Sans";
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 25.15px;
+}
+.hours,
+.minutes,
+.seconds{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.countdown_timer_name{
+	color: #474747;
+	font-family: Ubuntu;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 34.28px;
+	/* Text style for "Минут" */
+	letter-spacing: 0.06px;
+}
+form{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	max-width: 270px;
+}
+form input{
+	padding: 4px 20px;
+	color: #232323;
+	font-family: Ubuntu;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 35.31px;
+	letter-spacing: 0.06px;
+	margin-bottom:12px;
+	margin-top:17px;
+}
+
+.header_main_offer_countdown_sell{
+	color: #474747;
+	font-family: Ubuntu;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 34.95px;
+	/* Text style for "Сегодня уж" */
+	font-family: Ubuntu;
+	letter-spacing: 0.06px;
+	padding-bottom: 66px;
+}
+.header_main_offer_img_description{
+	text-align: center;
+	max-width: 310px;
+	color: #232323;
+	font-family: Ubuntu;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 18.12px;
+	margin: 0 auto;
+}
+.header_main_offer_img{
+text-align: center;
+}
+.img::before{
+	position: absolute;
+	content: ""/* url(../img/honey.png) */;
+	width: 109px;
+	height: 105px;
+	background: url(../img/honey.png) no-repeat;
+	background-position: center center;
+	-webkit-background-size: contain;
+	background-size: contain;
+	top: -26px;
+	right: 88px;
+}
+.img::after{
+	position: absolute;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	content: "75%";
+	color: #232323;
+	font-family: Ubuntu;
+	font-size: 25px;
+	font-weight: 700;
+	text-transform: uppercase;
+	/* Text style for "-75%" */
+	letter-spacing: 0.41px;
+	top: -5px;
+	right: 110px;
+	width: 61px;
+	height: 60px;
+	background-color: #f7bc00;
+	border: 1px solid transparent;
+	border-radius: 50%;
+}
+.img{
+	width:100%;
+	height: 86%;
+	background: url(../img/product.png) no-repeat;
+	background-position: center center;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+/* .header_main_offer_img img{
+	height: 85.7%;
+} */
+.stamps{
+	background-color: #232323;
+}
+.stamps_wrap{
+	margin: 0 auto;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+.stamp{
+	width: 99px;
+}
+.stamps_wrap .stamp:nth-child(2){
+	margin-left:122px;
+	margin-right:122px;
+}
+.why_us{
+	padding-top: 70px;
+	background-color: #f0f6f6;
+	padding-bottom: 95px;
+}
+h2{
+	color: #232323;
+	font-family: "Leksa Sans";
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 39.66px;
+	text-align: center;
+	margin-bottom: 17px;
+}
+.why_us_list{
+	color: #232323;
+	font-family: Ubuntu;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 23.9px;
+	/* Text style for "Наши преим" */
+	letter-spacing: 0.46px;
+	text-align: center;
+	margin-bottom: 45px;
+}
+.why_us_features{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.why_us_feature{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	color: #232323;
+	font-family: Ubuntu;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 23.6px;
+	/* Text style for "Запускает" */
+	letter-spacing: 0.41px;
+	text-align: center;
+}
+.why_us_description{
+	max-width: 193px;
+}
+.why_us_pict_1{
+	background:url(../img/1.png) no-repeat;
+}
+.why_us_pict_2{
+	background:url(../img/2.png) no-repeat;
+}
+.why_us_pict_3{
+	background:url(../img/3.png) no-repeat;
+}
+.why_us_pict_4{
+	background:url(../img/4.png) no-repeat;
+}
+.why_us_pict_5{
+	background:url(../img/5.png) no-repeat;
+}
+
+.why_us_pict{
+	background-position: center center;
+	margin-bottom: 20px;
+}
+.pain{
+	padding-top: 70px;
+	padding-bottom: 94px;
+	background: url(../img/bg.jpg) no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+}
+.pain_description{
+	text-align: center;
+	color: #232323;
+	font-family: Ubuntu;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 23.77px;
+	/* Text style for "Болезни су" */
+	letter-spacing: 0.46px;
+	margin-bottom: 47px;
+}
+.pain_name{
+	color: #232323;
+	font-family: Ubuntu;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 23.93px;
+	text-transform: uppercase;
+	/* Text style for "Б, оль" */
+	letter-spacing: 0.5px;
+	margin-bottom: 8px;
+}
+.pain_img{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+.pain_img img{
+	margin-bottom: 19px;
+}
+.pain_img_description{
+	color: #232323;
+	font-family: Ubuntu;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 23.6px;
+	/* Text style for "Невыносима" */
+	letter-spacing: 0.41px;
+	max-width: 240px;
+	text-align: center;
+	margin-bottom: 27px;
+}
+.pain_final{
+	margin:0 auto;
+	text-align: center;
+	color: #232323;
+	font-family: "Leksa Sans";
+	font-size: 25px;
+	font-weight: 700;
+	max-width: 972px;
+}
+footer{
+	background-color: #232323;
+	padding-top: 47px;
+	padding-bottom: 48px;
+}
+.footer_adress{
+	color: #d7d7d7;
+	font-family: Ubuntu;
+	font-size: 16px;
+	font-weight: 400;
+	/* Text style for "ООО "Практ" */
+	letter-spacing: 0.8px;
+	text-align: center;	
+	margin-bottom: 23px;
+}
+.footer_politics{
+	color: #f7bc00;
+	font-family: Ubuntu;
+	font-size: 16px;
+	font-weight: 400;
+	text-decoration: underline;
+	/* Text style for "Политика к" */
+	letter-spacing: 0.8px;
+	text-align: center;
+}
+.footer_politics a{
+	color: #f7bc00;
+}
+
+@media (max-width: 1199.999px ){
+	.show{
+		display: none;
+	}
+	.header_features_logo{
+		display: block;
+	}
+	.header_features_logo img{
+
+	}
+	.header_features_feature_description{
+		font-size: 14px;
+		line-height: 17.8px;
+		letter-spacing: 0.35px;
+	}.header_main_offer_title{
+		padding-bottom: 19px;
+	}
+	.header_main_offer{
+		padding-top: 31px;
+	}
+	.header_main_offer_title h1{
+		font-size: 40px;
+		line-height: 30.78px;
+			}
+	.header_main_offer_subtitle{
+		font-size: 18px;
+		line-height: 24px;
+		letter-spacing: 0.46px;
+		padding-bottom: 13px;
+	}
+	
+	.header_main_offer_price{
+		font-size: 30px;
+		line-height: 39.48px;
+		padding-bottom: 27px;
+	}
+	.header_main_offer_countdown_title{
+		font-size: 14px;
+		line-height: 34.26px;
+		letter-spacing: 0.06px;
+		padding-bottom: 9px;
+	}
+	.header_main_offer_countdown_timer{
+		max-width: 267px;
+	}
+	.countdown_time{
+		font-size: 36px;
+		line-height: 25.03px;
+	}
+	.countdown_figure{
+		width: 69px;
+		height: 60px;
+	}
+	.countdown_timer_name{
+		font-size: 14px;
+		line-height: 34.12px;
+		letter-spacing: 0.06px;
+		padding-bottom: 17px;
+	}
+	form{
+		max-width: 267px;
+	}
+	form input{
+		font-size: 16px;
+		line-height: 35.31px;
+		letter-spacing: 0.06px;
+		margin-bottom: 12px;
+		margin-top: 7px;
+	}
+	.img{
+		height: 84%;
+	}
+	.img::before{
+		width: 109px;
+		height: 105px;
+		top: -24px;
+		right: 138px;
+	}
+	.img::after{
+		font-size: 25px;
+		letter-spacing: 0.41px;
+		width: 60px;
+		height: 60px;
+		right: 160px;
+	}
+	.header_main_offer_countdown_sell{
+		font-size: 16px;
+		margin-left: 5px;
+	}
+	.header_main_offer_img_description{
+		font-size: 16px;
+	}
+	.stamp{
+		width: 99px;
+		height: 99px;
+	}
+	.why_us{
+		padding-top: 70px;
+		padding-bottom: 99px;
+	}
+	h2{
+		font-size: 40px;
+		line-height: 39.66px;
+		margin-bottom: 17px;
+	}
+	.why_us_list{
+		font-size: 18px;
+		line-height: 23.9px;
+		letter-spacing: 0.46px;
+	}
+	.why_us_pict img{
+		width: 174px;
+		height: 200px;
+	}
+	.why_us_pict{
+		background-size: 145px;
+	}
+	.why_us_feature{
+		font-size: 16px;
+		line-height: 23.6px;
+		letter-spacing: 0.41px;
+	}
+	.why_us_description{
+		display: inline-block;
+		max-width: 193px;
+	}
+
+	.pain{
+		padding-bottom:94px;
+		padding-top: 69px;
+
+	}
+	.pain_description{
+		font-size: 18px;
+		line-height: 23.77px;
+		letter-spacing: 0.46px;
+		margin-bottom: 47px;
+	}
+	.pain_img img{
+		width: 250px;
+		height: 250px;
+		margin-bottom: 14px;
+	}
+	.pain_name{
+		font-size: 20px;
+		line-height: 23.93px;
+		letter-spacing: 0.5px;
+		margin-bottom: 9px;
+	}
+	.pain_img_description{
+		font-size: 16px;
+		line-height: 23.6px;
+		letter-spacing: 0.41px;
+		margin-bottom: 27px;
+	}
+	.pain_final{
+		font-size: 30px;
+	}
+	footer{
+		padding-bottom: 48px;
+		padding-top: 49px;
+	}
+	.footer_adress{
+		font-size: 14px;
+		letter-spacing: 0.7px;
+	}
+	.button{
+		font-size: 16px;
+		line-height: 23.7px;
+		letter-spacing: 0.41px;
+		padding:10px 19px;
+	}
+	.footer_politics{
+		font-size: 14px;
+		letter-spacing: 0.82px;
+	}
+	.footer_politics a{
+		font-size: 14px;
+		letter-spacing: 0.82px;
+	}
+
+}
+
+@media(max-width: 992px){
+	.show{
+		display: none;
+	}
+	.header_features_logo{
+		width: 160px;
+	}
+	.header_features_logo img{
+		width:140px;
+	}
+	.header_features_feature_description{
+		font-size: 12px;
+		line-height: 13.69px;
+		letter-spacing: 0.39px;
+	}.header_main_offer_title{
+		padding-bottom: 15px;
+	}
+	.header_main_offer_title h1{
+		font-size: 30px;
+		line-height: 30.78px;
+
+	}
+	.header_main_offer_subtitle{
+		font-size: 14px;
+		line-height: 18.47px;
+		letter-spacing: 0.46px;
+		padding-bottom: 8px;
+	}
+	
+	.header_main_offer_price{
+		font-size: 24px;
+		line-height: 30.38px;
+		padding-bottom: 20px;
+	}
+	.header_main_offer_countdown_title{
+		font-size: 12px;
+		line-height: 26.36px;
+		letter-spacing: 0.06px;
+		padding-bottom: 6px;
+	}
+	.header_main_offer_countdown_timer{
+		max-width: 208px;
+	}
+	.countdown_time{
+		font-size: 28px;
+		line-height: 19.35px;
+	}
+	.countdown_figure{
+		width: 53px;
+		height: 46px;
+	}
+	.countdown_timer_name{
+		font-size: 12px;
+		line-height: 26.25px;
+		letter-spacing: 0.06px;
+		padding-bottom: 15px;
+	}
+	form{
+		max-width: 208px;
+	}
+	form input{
+		font-size: 14px;
+		line-height: 27.17px;
+		letter-spacing: 0.07px;
+		margin-bottom: 10px;
+		margin-top: 0px;
+	}
+	.img{
+		height: 80%;
+	}
+	.img::before{
+		width: 84px;
+		height: 81px;
+		top: -24px;
+		right: 68px;
+	}
+	.img::after{
+		font-size: 19px;
+		letter-spacing: 0.41px;
+		width: 47px;
+		height: 47px;
+		right: 87px;
+	}
+	.header_main_offer_countdown_sell{
+		font-size: 12px;
+		margin-left: 5px;
+	}
+	.header_main_offer_img_description{
+		font-size: 12px;
+	}
+	.stamp{
+		width:77px;
+		height:77px;
+	}
+	.why_us{
+		padding-top: 54px;
+		padding-bottom: 77px;
+	}
+	h2{
+		font-size: 30px;
+		line-height: 30.47px;
+		margin-bottom: 13px;
+	}
+	.why_us_list{
+		font-size: 14px;
+		line-height: 18.36px;
+		letter-spacing: 0.46px;
+	}
+	.why_us_pict img{
+		width: 134px;
+		height: 154px;
+	}
+	.why_us_pict{
+		-webkit-background-size: 100px;
+		background-size: 100px;
+	}
+	.why_us_feature{
+		font-size: 14px;
+		line-height: 20px;
+		letter-spacing: 0.47px;
+	}
+	.why_us_description{
+		display: inline-block;
+		max-width: 144px;
+	}
+	header .no_padding{
+		padding: 0 !important;
+	}
+	.pain{
+		padding-bottom:76px;
+		padding-top: 53px;
+
+	}
+	.pain_description{
+		font-size: 14px;
+		line-height: 18.26px;
+		letter-spacing: 0.47px;
+	}
+	.pain_img img{
+		margin-bottom: 14px;
+		width: 192px;
+		height: 192px;
+	}
+	.pain_name{
+		font-size: 15px;
+		line-height: 18.37px;
+		letter-spacing: 0.5px;
+	}
+	.pain_img_description{
+		font-size: 14px;
+		line-height: 19.99px;
+		letter-spacing: 0.47px;
+	}
+	.pain_final{
+		font-size: 18px;
+	}
+	footer{
+		padding-bottom: 35px;
+		padding-top: 35px;
+	}
+	.footer_adress{
+		font-size: 12px;
+		letter-spacing: 0.82px;
+	}
+	.button{
+		font-size: 12px;
+		line-height: 18.24px;
+		letter-spacing: 0.39px;
+		padding:8px 15px;
+	}
+	.footer_adress{
+		font-size: 12px;
+		letter-spacing: 0.82px;
+	}
+	.footer_politics{
+		font-size: 12px;
+		letter-spacing: 0.82px;
+	}
+	.footer_politics a{
+		font-size: 12px;
+		letter-spacing: 0.82px;
+	}
+}
+@media(max-width: 767px){
+	.pop_up .container .close{
+		left:90%;
+	}
+	.show{
+		display: block;
+	}
+	.hide{
+		display: none;
+	}
+	.no_padding{
+		display: flex;
+		justify-content: center;
+	}
+	.header_features_logo img{
+		width: 168px;
+	}
+	.header_features_logo{
+		width: 100%;	
+	}
+	.header_main_offer_title{
+			padding-bottom: 15px;
+			text-align: center;
+		}
+		.header_main_offer_title h1{
+			font-size: 24px;
+			line-height: 30.7px;
+
+		}
+		.header_main_offer_subtitle{
+			font-size: 14px;
+			line-height: 18.47px;
+			letter-spacing: 0.46px;
+			padding-bottom: 8px;
+			text-align: center;
+		}
+		
+		.header_main_offer_price{
+			font-size: 24px;
+			line-height: 30.38px;
+			padding-bottom: 20px;
+			text-align: center;
+		}
+		.header_main_offer_countdown_title{
+			font-size: 12px;
+			line-height: 26.36px;
+			letter-spacing: 0.06px;
+			padding-bottom: 6px;
+			text-align: center;
+		}
+		.header_main_offer_countdown_timer{
+			max-width: 100%;
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			justify-content: center;
+		}
+		.minutes{
+			margin-left: 23px;
+			margin-right:23px;
+		}
+		.countdown_time{
+			font-size: 28px;
+			line-height: 19.35px;
+		}
+		.countdown_figure{
+			width: 53px;
+			height: 46px;
+		}
+		.countdown_timer_name{
+			font-size: 12px;
+			line-height: 26.25px;
+			letter-spacing: 0.06px;
+			padding-bottom: 15px;
+		}
+		.header_main_offer_countdown_form{
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			justify-content: center;
+		}
+		form{
+			max-width: 209px;
+		}
+		form input{
+			font-size: 14px;
+			line-height: 27.17px;
+			letter-spacing: 0.07px;
+			margin-bottom: 10px;
+			margin-top: 0px;
+		}
+		.img{
+			height: 80%;
+		}
+		.img::before{
+			width: 84px;
+			height: 81px;
+			top: -24px;
+			right: 68px;
+		}
+		.img::after{
+			font-size: 19px;
+			letter-spacing: 0.41px;
+			width: 47px;
+			height: 47px;
+			right: 87px;
+		}
+		.header_main_offer_countdown_sell{
+			font-size: 12px;
+			margin-left: 0px;
+			text-align: center;
+			padding-bottom: 0;
+
+		}
+		.header_main_offer_img_description{
+			font-size: 12px;
+			margin-bottom: 20px;
+		}
+		.stamp{
+			width:77px;
+			height:77px;
+		}
+		.stamps_wrap{
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			justify-content: space-around;
+		}
+		.stamps_wrap .stamp:nth-child(2){
+			margin-right: 24px;
+			margin-left:24px;
+		}
+		.why_us{
+			padding-top: 54px;
+			padding-bottom: 77px;
+		}
+		h2{
+			font-size: 30px;
+			line-height: 30.47px;
+			margin-bottom: 13px;
+		}
+		.why_us_list{
+			font-size: 14px;
+			line-height: 18.36px;
+			letter-spacing: 0.46px;
+		}
+		.why_us_pict img{
+			width: 134px;
+			height: 154px;
+		}
+		.why_us_pict{
+			-webkit-background-size: 100px;
+			background-size: 100px;
+		}
+		.why_us_features{
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+		}
+		.order_0{order:0;}
+		.order_1{order:1;}
+		.order_2{order:2;}
+		.order_3{order:3;}
+		.order_4{order:4;}
+		.why_us_feature{
+			font-size: 14px;
+			line-height: 20px;
+			letter-spacing: 0.47px;
+		}
+		.why_us_description{
+			display: inline-block;
+			max-width: 144px;
+		}
+		header .no_padding{
+			padding: 0 !important;
+		}
+		.pain{
+			padding-bottom:76px;
+			padding-top: 53px;
+
+		}
+		.pain_description{
+			font-size: 14px;
+			line-height: 18.26px;
+			letter-spacing: 0.47px;
+		}
+		.pain_img img{
+			margin-bottom: 14px;
+			width: 192px;
+			height: 192px;
+		}
+		.pain_name{
+			font-size: 15px;
+			line-height: 18.37px;
+			letter-spacing: 0.5px;
+		}
+		.pain_img_description{
+			font-size: 14px;
+			line-height: 19.99px;
+			letter-spacing: 0.47px;
+		}
+		.pain_final{
+			font-size: 18px;
+		}
+		footer{
+			padding-bottom: 35px;
+			padding-top: 35px;
+		}
+		.footer_adress{
+			font-size: 12px;
+			letter-spacing: 0.82px;
+		}
+		.button{
+			font-size: 12px;
+			line-height: 18.24px;
+			letter-spacing: 0.39px;
+			padding:8px 15px;
+		}
+		.footer_adress{
+			font-size: 12px;
+			letter-spacing: 0.82px;
+		}
+		.footer_politics{
+			font-size: 12px;
+			letter-spacing: 0.82px;
+		}
+		.footer_politics a{
+			font-size: 12px;
+			letter-spacing: 0.82px;
+		}
+}
+

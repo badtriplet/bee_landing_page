@@ -1,0 +1,215 @@
+.popup{
+	position: fixed;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	width: 320px;
+	height: 148px;
+	background-color: #232323;
+	z-index: 1;
+	top:10px;
+	right: 10px;
+	padding-top: 45px;
+	padding-bottom: 40px;
+	margin-bottom: 148px;
+}
+.popup2{
+	position: fixed;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	width: 320px;
+	height: 148px;
+	background-color: #232323;
+	z-index: 1;
+	top:160px;
+	right: 10px;
+	padding-top: 45px;
+	padding-bottom: 40px;
+	margin-bottom: 148px;
+}
+.cross{
+	position: relative;
+	top: -56px;
+	right: -210px;
+}
+.popup3{
+	position: fixed;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	width: 320px;
+	height: 148px;
+	background-color: #232323;
+	z-index: 1;
+	top:310px;
+	right: 10px;
+	padding-top: 45px;
+	padding-bottom: 40px;
+	margin-bottom: 148px;
+}
+.main_text_sell{
+	display: inline-block;	
+	color: #b8b8b8;
+	font-family: Ubuntu;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 18.25px;
+	/* Text style for "Количество" */
+	letter-spacing: 0.39px;
+	width: 193px;
+}
+.second_text_sell{
+	padding-top: 15px;
+	display: inline-block;
+	color: #ffffff;
+	font-family: Ubuntu;
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 18.08px;
+	/* Text style for "172" */
+	letter-spacing: 0.6px;
+	    padding-left: 18px;
+}
+.popup1::before{
+	content: url(../img/users.png);
+	margin-right: 10px;
+}
+.popup2::before{
+	content: url(../img/phone.png);
+	margin-right: 10px;
+}
+.popup3::before{
+	content: url(../img/cart.png);
+	margin-right: 10px;
+}
+
+.pop_up {
+	padding-top: 2%;
+	width:100%;
+    height: 2000px;
+    background-color: rgba(0,0,0,0.5);
+    overflow:hidden;
+    position:fixed;
+    top:0px;
+}
+.pop_up .container{
+	background: #fff;
+	max-width: 870px;
+}
+.pop_up .container .close{
+	cursor: pointer;
+	position: relative;
+	font-size: 20px;
+	font-family: ubuntu;
+	left: 98%;
+	top:2%;
+}
+
+.pop_up_header_title{
+	color: #232323;
+	font-family: "Leksa Sans";
+	text-align: center;
+	font-size: 20px;
+}
+.pop_up{
+	text-align: center;
+}
+.pop_up p{
+	color: #c68e64;
+	font-family: Ubuntu;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 0.51px;
+	padding-bottom: 11px;
+}
+.pop_up .header_main_offer_price{
+	color: #232323;
+	font-family: "Leksa Sans";
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 39.48px;
+	padding:0;
+	z-index: 1;
+
+}
+.pop_up .header_main_offer_countdown_timer{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	margin:0 auto;
+}
+.pop_up .header_main_offer_countdown_timer .minutes{
+	margin: 0 20px;
+}
+.pop_up .header_main_offer_countdown_timer .countdown_figure{
+	width:60px;
+	height: 60px;
+}
+.pop_up .header_main_offer_countdown_form{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+}
+.pop_up .header_main_offer_countdown_form input{
+	margin: 2px;
+}
+.pop_up_product_image img{
+	    height: 79%
+}
+.hide_pop_up{
+	display: none;
+}
+@media(max-width:625px){
+	.pop_up_product_image img{
+		    height: 85%;
+	}
+	.pop_up .header_main_offer_img_description{
+		line-height: 10px;
+	}
+}
+@media(max-width: 575px){
+	.pop_up_product_image img{
+		display: none;	
+	}
+	.pop_up_product_image{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		background: linear-gradient(to bottom, rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url(../img/product.png) no-repeat;
+		background-position: center center;
+		-webkit-background-size: contain;
+		background-size: contain;
+		display: none;
+	}
+	.pop_up .header_main_offer_img_description{
+		font-size: 16px;
+		line-height: 18px;
+	}
+	.pop_up_header_title{
+		color: #232323;
+		font-family: "Leksa Sans";
+		text-align: center;
+		font-size: 16px;
+	}
+}

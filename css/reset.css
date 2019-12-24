@@ -1,0 +1,21 @@
+*{
+	padding:0;
+	margin:0;
+	box-sizing: border-box;
+	}
+	/* хром, сафари */
+	*::-webkit-scrollbar { width: 0; }
+
+	/* ie 10+ */
+	* { -ms-overflow-style: none; }
+
+	/* фф (свойство больше не работает, других способов тоже нет)*/
+	*{ overflow: -moz-scrollbars-none; }
+	input::-webkit-input-placeholder {color:#232323; opacity:1;}/* webkit */
+	input::-moz-placeholder          {color:#232323; opacity:1;}/* Firefox 19+ */
+	input:-moz-placeholder           {color:#232323; opacity:1;}/* Firefox 18- */
+	input:-ms-input-placeholder      {color:#232323; opacity:1;}/* IE */
+	button,
+	.button{
+		cursor: pointer;
+	}
